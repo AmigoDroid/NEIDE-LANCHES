@@ -19,7 +19,6 @@ margin: 0;
 }
 .rodape
 {
-    position: absolute;
     bottom: 0;
     background: var(--cor-azul-dark);
     width: 100%;
