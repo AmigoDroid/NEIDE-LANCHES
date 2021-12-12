@@ -36,7 +36,6 @@
 }
 .options .opts h1
 {
-    font-size: 100%;
     background: transparent;
 }
 .options .opts img
@@ -65,12 +64,11 @@
             }
     .options .opts
     {
-         margin-bottom: 8%;
+         margin-left: 0;
+         margin-bottom: 8%;  
+         width: 100%;
     }
-    .options .opts
-    {
-    margin-left: 0;
-}
+
 .options .opts:last-child
 {
     margin-left: 0;
