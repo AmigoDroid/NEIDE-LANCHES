@@ -3,7 +3,7 @@
 
 function tt (){
 const teste ={
-    titulo:'bandeco',
+    titulo:'bandeco com salada',
     type:false
 }
 return teste;
@@ -26,10 +26,12 @@ function renderDestaque(dados){
   const div =  document.getElementById('destaques');
   div.innerHTML+=
   `<div class="card">
-   <h4>${titulo}</h4>
-   <img src="../../src/img/logo.jpg" alt="icon">
-   <button onclick='pedirDestaque()'>pedir</button>
-   </div>
+  <h4>${titulo}</h4>
+  <div class="img">
+      <img src="../../src/img/logo.jpg" alt="icon">
+  </div>
+  <button onclick='pedirDestaque()'>pedir</button>
+  </div>
   `;
 }
 function pedirDestaque(){

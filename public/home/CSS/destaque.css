@@ -14,7 +14,8 @@ justify-content: center;
 flex-direction: column;
 height: auto;
 padding:10px;
-width: auto;
+width: 90%;
+min-height: 450px;
 margin: 15px;
 border-radius: 10px;
 background: var( --cor-branco-sinza);
@@ -30,17 +31,18 @@ background-color: var(--cor-vermelha);
 color: var(--branco);
 box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.22);
 top: 10px;
+text-align: center;
 }
-.card img
+.card .img
 {
-    position: absolute;
     width: 100%;
-    height: auto;
+}
+.card .img img{
+    width: 100%;
 }
 .card button
 {
 position: absolute;
-height: 30px;
 width: 80%;
 border-radius: 50px;
 border: none;
@@ -53,6 +55,7 @@ color: var(--branco);
 outline: none;
 }
 @media screen and (max-width:450px){
+
     .destaques{
         display: flex;
         flex-direction: column;
@@ -68,4 +71,7 @@ outline: none;
     }
    
    
+}
+@media screen and (min-width:451px){
+    
 }
