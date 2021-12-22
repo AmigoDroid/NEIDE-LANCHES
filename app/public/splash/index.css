@@ -2,8 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
+    /*FONTES*/
     --fonte-logo:'Cinzel Decorative', cursive;
     --fonte-letras:'Philosopher', sans-serif;
+    /*CORES*/
+    --color-menu-title-background:#232323;
+    --color-title-background:rgb(247, 32, 32);
+    --color-amarelo:yellow;
+    --color-fonte-preto:#23232346;
 }
 *
 {
@@ -12,7 +18,7 @@
     font-family: var(--fonte-logo)
 }
 .title{
-    background: rgb(247, 32, 32);
+    background: var(--color-title-background);
     background-size: 300%;
     padding: 5px;
     font-weight: 700;
@@ -20,9 +26,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
 }
 .title h1{
-    color: yellow;
+    color: var(--color-amarelo);
 }
 .title p{
     background-color: white;
@@ -30,7 +37,114 @@
     border-radius: 25px;
     font-weight: 700;
     border: 1px solid #23232346;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
 }
 .bemvindo{
     text-align: center;
+    margin-top: 5%;
+}
+.menuhome{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.navigation{
+    width: 400px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222327;
+    position: relative;
+    border-radius: 10px;
+}
+.navigation ul{
+    display: flex;
+    text-align: center;
+    width: 250px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    width: 80px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    transition: .4s;
+}
+.navigation ul li.active a .icon{
+    transform: translateY(-30px);
+}
+.navigation ul li a .text{
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: .4s;
+    transform: translateY(-15px);
+    opacity: 0;
+}
+.navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(15px);
+}
+.indicador{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: aqua;
+    border-radius: 50%;
+    border: solid 5px white;
+    top: -57%;
+    transition: .4s;
+}
+.indicador::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -21px;
+    width: 20px;
+    height: 20px;
+    border-radius: 0 20px 0 0;
+    background:transparent;
+    box-shadow: 0 -10px 0 white;
+}
+.indicador::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -21px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px 0 0 0;
+    background:transparent;
+    box-shadow: 0 -10px 0 white;
+}
+.navigation ul li:nth-child(1).active ~ .indicador{
+    transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicador{
+    transform: translateX(calc(80px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicador{
+    transform: translateX(calc(80px * 2));
 }
