@@ -64,6 +64,8 @@
 }
 .CardPrecos .precos ul li a{
     text-decoration: none;
+    outline: none;
+    pointer-events: none;
 }
 .CardPrecos .precos ul .item{
     background-color: #232323;
@@ -136,6 +138,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    outline: none;
+    pointer-events: none;
 }
 .navigation ul li a .icon{
     position: relative;
