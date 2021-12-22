@@ -11,6 +11,7 @@
     --color-amarelo:white;
     --color-fonte-preto:#23232346;
     --color-verde-thema:rgb(0, 255, 149);
+    --color-branco:white;
 }
 *
 {
@@ -41,9 +42,42 @@
     border: 1px solid #23232346;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
 }
-.bemvindo{
+.CardPrecos{
     text-align: center;
     margin-top: 5%;
+    font-weight: 600;
+}
+.CardPrecos h1{
+    font-size: 2.2em;
+    font-weight: 800;
+}
+.CardPrecos .precos ul{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    font-weight: 600;
+    display: flex;
+ 
+}
+.CardPrecos .precos ul li{
+    margin-right: 10px;
+    font-size: 0.7em;
+}
+.CardPrecos .precos ul li a{
+    text-decoration: none;
+}
+.CardPrecos .precos ul .item{
+    background-color: #232323;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.CardPrecos .precos ul li h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-branco);
+}
+.CardPrecos .precos ul li p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-branco);
 }
 .menuhome{
     width: 100%;
@@ -187,7 +221,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
-    width: 200px;
+    width: 300px;
     border-radius: 5px;
 }
 .conteudo .card .img{
@@ -202,8 +236,15 @@
     font-size: 10px;
     text-align: center;
 }
+.conteudo .card .textCard h1{
+    font-family: var(--fonte-logo);
+}
+.conteudo .card .textCard p{
+    margin-top: 5px;
+    font-weight: 600;
+}
 .conteudo .card .button{
-    width: 85%;
+    width: 62%;
     text-align: center;
     display: flex;
     align-items: center;
@@ -224,6 +265,7 @@
     background-color: white;
    
 }
+
 .conteudo .card .button .icon-whatssap{
     color: white;
     font-weight: 800;
