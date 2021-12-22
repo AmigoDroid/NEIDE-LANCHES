@@ -60,6 +60,7 @@
     justify-content: center;
     background-color: #222327;
     position: relative;
+    border-top-color: 5px solid white;
 }
 .navigation ul{
     display: flex;
