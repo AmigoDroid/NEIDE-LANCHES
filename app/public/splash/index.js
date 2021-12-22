@@ -13,12 +13,12 @@ const lanche = document.getElementById('lanche');
 const almoco = document.getElementById('almoco');
 //
 pizza.addEventListener('click',function(){
-alert('pizza');
+    //pizza
 });
 lanche.addEventListener('click',function(){
-    alert('lanche');
+    //lanche
     });
 almoco.addEventListener('click',function(){
-alert('amoço');
+    //almoço
 });
     
