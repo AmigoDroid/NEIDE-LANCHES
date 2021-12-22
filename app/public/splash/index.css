@@ -63,6 +63,24 @@
     border: solid 10px transparent;
     border-top-color: white;
 }
+.navigation::before{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: white;
+}
+.navigation::after{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: white;
+}
 .navigation ul{
     display: flex;
     text-align: center;
@@ -94,6 +112,7 @@
 }
 .navigation ul li.active a .icon{
     transform: translateY(-30px);
+    color: black;
 }
 .navigation ul li a .text{
     position: absolute;
@@ -113,7 +132,7 @@
     position: absolute;
     width: 70px;
     height: 70px;
-    background-color: aqua;
+    background-color: rgb(0, 255, 149);
     border-radius: 50%;
     border: solid 5px white;
     top: -57%;
@@ -167,6 +186,7 @@
     align-items: center;
     margin-bottom: 40px;
     width: 200px;
+    border-radius: 5px;
 }
 .conteudo .card .img{
     width: 100%;
@@ -181,28 +201,31 @@
     text-align: center;
 }
 .conteudo .card .button{
-    width: 100%;
+    width: 85%;
     height: 50px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(0, 255, 149);
     border-radius: 50px;
+    box-sizing: border-box;
+    margin: 10px;
 }
 .conteudo .card .button h2{
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 3px;
     border-radius: 50px 0 100px 50px;
-    height: 28px;
+    height: 26px;
     text-align: left;
-    padding-left: 5px;
+    padding-left: 10px;
     width: 140px;
     background-color: white;
    
 }
 .conteudo .card .button .icon-whatssap{
-    margin-left: auto;
+    color: white;
+    font-weight: 800;
     margin-right: auto;
-    font-size: 1.5em;
+    font-size: 2em;
 }
