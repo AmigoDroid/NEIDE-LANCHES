@@ -50,6 +50,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 5%;
+    position: fixed;
+    bottom: 0;
 }
 .navigation{
     width: 400px;
