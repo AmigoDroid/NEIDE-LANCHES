@@ -45,7 +45,7 @@
 }
 .menuhome{
     width: 100%;
-    border-radius: 10px;
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,6 @@
     justify-content: center;
     background-color: #222327;
     position: relative;
-    border-radius: 10px;
 }
 .navigation ul{
     display: flex;
