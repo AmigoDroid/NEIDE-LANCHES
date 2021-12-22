@@ -7,9 +7,10 @@
     --fonte-letras:'Philosopher', sans-serif;
     /*CORES*/
     --color-menu-title-background:#232323;
-    --color-title-background:rgb(247, 32, 32);
-    --color-amarelo:yellow;
+    --color-title-background:#232323;
+    --color-amarelo:white;
     --color-fonte-preto:#23232346;
+    --color-verde-thema:rgb(0, 255, 149);
 }
 *
 {
@@ -32,8 +33,9 @@
     color: var(--color-amarelo);
 }
 .title p{
-    background-color: white;
-    padding: 5px;
+    background:var(--color-verde-thema);
+    padding: 6px;
+    color: black;
     border-radius: 25px;
     font-weight: 700;
     border: 1px solid #23232346;
@@ -213,6 +215,7 @@
 }
 .conteudo .card .button h2{
     font-family: Arial, Helvetica, sans-serif;
+    pointer-events: none;
     margin-left: 3px;
     border-radius: 50px 0 100px 50px;
     text-align: left;
