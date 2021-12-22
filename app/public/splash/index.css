@@ -45,7 +45,6 @@
 }
 .menuhome{
     width: 100%;
-  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +64,7 @@
 .navigation ul{
     display: flex;
     text-align: center;
-    width: 250px;
+    width: 230px;
 }
 .navigation ul li{
     position: relative;
@@ -144,8 +143,8 @@
     transform: translateX(calc(70px * 0));
 }
 .navigation ul li:nth-child(2).active ~ .indicador{
-    transform: translateX(calc(80px * 1));
+    transform: translateX(calc(75px * 1));
 }
 .navigation ul li:nth-child(3).active ~ .indicador{
-    transform: translateX(calc(80px * 2));
+    transform: translateX(calc(75px * 2));
 }
