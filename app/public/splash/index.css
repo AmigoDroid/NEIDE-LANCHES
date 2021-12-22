@@ -60,7 +60,8 @@
     justify-content: center;
     background-color: #222327;
     position: relative;
-    border-top-color: 5px solid white;
+    border: solid 10px transparent;
+    border-top-color: white;
 }
 .navigation ul{
     display: flex;
