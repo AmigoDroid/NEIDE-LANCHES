@@ -163,16 +163,10 @@
 }
 .conteudo .card .img{
     width: 100%;
-    height: 150px;
-    background-image: url('../../src/img/pizza-neon.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 130%;
+    height: auto;
 }
 .conteudo .card .img img{
-    position: relative;
     width: 100%;
-    max-width: 100%;
     height: 100%;
 }
 .conteudo .card .textCard{
