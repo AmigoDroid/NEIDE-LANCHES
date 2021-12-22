@@ -156,6 +156,9 @@
     padding: 0;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .conteudo .card{
     border: solid 1px;
@@ -163,10 +166,11 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+    width: 200px;
 }
 .conteudo .card .img{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
 }
 .conteudo .card .img img{
     width: 100%;
@@ -184,14 +188,17 @@
     align-items: center;
     justify-content: center;
     background-color: aqua;
+    border-radius: 50px;
 }
 .conteudo .card .button h2{
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: auto;
+    margin-left: 3px;
+    border-radius: 50px 0 100px 50px;
+    height: 28px;
+    text-align: left;
+    padding-left: 5px;
+    width: 140px;
     background-color: white;
-    box-sizing: border-box;
-    padding: 6px;
-    border-radius: 25px 0 25px 25px ;
    
 }
 .conteudo .card .button .icon-whatssap{
