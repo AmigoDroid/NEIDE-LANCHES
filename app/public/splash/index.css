@@ -157,14 +157,48 @@
 }
 .conteudo .card{
     border: solid 1px;
-    width: 160px;
-    height: 160px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 .conteudo .card .img{
     width: 100%;
-    height: 80px;
+    height: 150px;
+    background-image: url('../../src/img/pizza-neon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+}
+.conteudo .card .img img{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+.conteudo .card .textCard{
+    font-size: 10px;
+    text-align: center;
+}
+.conteudo .card .button{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.conteudo .card .button h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 6px;
+    border-radius: 25px 0 25px 25px ;
+   
+}
+.conteudo .card .button .icon-whatssap{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
 }
