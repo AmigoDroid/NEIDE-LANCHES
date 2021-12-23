@@ -13,7 +13,8 @@ const lanche = document.getElementById('lanche');
 const almoco = document.getElementById('almoco');
 //
 pizza.addEventListener('click',function(){
-    //pizza
+    //pizzs
+    RenderPizza(pz(),0)
 });
 lanche.addEventListener('click',function(){
     //lanche
@@ -29,12 +30,6 @@ const pizza={
 }
 return pizza;
 }
-window.onload = function(){
-    for(let i =0; i<=15;i++){
-        RenderPizza(pz(), i);
-    }
-}
-
 
 function RenderPizza(dados, id){
     document.getElementById('root').innerHTML+=`
