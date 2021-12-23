@@ -236,18 +236,21 @@
     margin-bottom: 40px;
     width: 300px;
     border-radius: 5px;
+    padding: 5px;
 }
 
 .conteudo .card .textCard{
-    font-size: 10px;
     text-align: center;
 }
 .conteudo .card .textCard h1{
     font-family: var(--fonte-logo);
     font-weight: 800;
+    font-size: 25px
 }
 .conteudo .card .textCard p{
     margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
     font-weight: 700;
 }
 .conteudo .card .button{
