@@ -242,10 +242,11 @@
 }
 .conteudo .card .textCard h1{
     font-family: var(--fonte-logo);
+    font-weight: 800;
 }
 .conteudo .card .textCard p{
     margin-top: 5px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .conteudo .card .button{
     width: 62%;
