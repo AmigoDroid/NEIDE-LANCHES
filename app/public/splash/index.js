@@ -1,5 +1,6 @@
 const list = document.querySelectorAll('.list');
 const id =0;
+
 function activeLink(){
     list.forEach((item)=>
     item.classList.remove('active'));
@@ -14,14 +15,23 @@ const almoco = document.getElementById('almoco');
 //
 pizza.addEventListener('click',function(){
     //pizzs
+    addTamanhos();
     RenderPizza(pz(),0)
 });
 lanche.addEventListener('click',function(){
+
     //lanche
+    limpar()
     });
 almoco.addEventListener('click',function(){
     //almoço
 });
+
+window.onload = function(){
+    limpar();
+    addTamanhos();
+    RenderPizza(pz());
+}
 
 function pz (){
 const pizza={
@@ -44,6 +54,46 @@ function RenderPizza(dados, id){
     </div>
 </div>
     
+    `;
+}
+function limpar(){
+    document.getElementById('root').innerHTML=` <div id="tamanhos">
+               
+    </div> <br>`;
+}
+function addTamanhos(){
+    document.getElementById('tamanhos').innerHTML=`
+    <div class="CardPrecos">
+    <h1>Tamanhos</h1>
+     <div class="precos">
+         <ul>
+             <li class="item">
+                 <a>
+                     <h1>P</h1>
+                     <p>R$: 15</p>
+                 </a>
+             </li>
+             <li class="item">
+                 <a>
+                     <h1>M</h1>
+                     <p>R$: 25</p>
+                 </a>
+             </li>
+             <li class="item">
+                 <a>
+                     <h1>G</h1>
+                     <p>R$: 38</p>
+                 </a>
+             </li>
+             <li class="item">
+                 <a>
+                     <h1>GG</h1>
+                     <p>R$: 50</p>
+                 </a>
+             </li>
+     
+         </ul>
+     </div>
     `;
 }
     
