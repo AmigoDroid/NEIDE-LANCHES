@@ -222,11 +222,12 @@
 .renderCard{
     margin: 0;
     padding: 0;
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 110px;
+    
 }
 .conteudo .card{
     border: solid 1px;
