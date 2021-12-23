@@ -1,6 +1,5 @@
 const list = document.querySelectorAll('.list');
-const id =0;
-
+//animar indicador
 function activeLink(){
     list.forEach((item)=>
     item.classList.remove('active'));
@@ -8,6 +7,7 @@ function activeLink(){
 }
 list.forEach((item)=>
 item.addEventListener('click',activeLink));
+
 //botoes menu
 const pizza = document.getElementById('pizza');
 const lanche = document.getElementById('lanche');
@@ -15,38 +15,32 @@ const almoco = document.getElementById('almoco');
 //
 pizza.addEventListener('click',function(){
     //pizzs
-    addTamanhos();
-    RenderPizza(pz(),0)
+    limpar();
+    adPizza();
 });
 lanche.addEventListener('click',function(){
 
     //lanche
-    limpar()
+    limpar();
     });
 almoco.addEventListener('click',function(){
     //almoço
+    limpar();
 });
 
 window.onload = function(){
     limpar();
     addTamanhos();
-    RenderPizza(pz(),0);
+    adPizza();
 }
 
-function pz (){
-const pizza={
-    nome:'moda da casa',
-    descrision:'leva calabresa queijo e frango com mussarela'
-}
-return pizza;
-}
-
-function RenderPizza(dados, id){
+function RenderPizza(dados,id){
+    let {nome , descrision}= dados;
     document.getElementById('root').innerHTML+=`
     <div class="card">
     <div class="textCard">
-        <h1>${dados.nome+' / '+id}</h1>
-        <p>${dados.descrision}</p>
+        <h1>${nome}</h1>
+        <p>${descrision}</p>
     </div>
     <div class="button">
         <h2>Whatsap</h2>
@@ -56,11 +50,13 @@ function RenderPizza(dados, id){
     
     `;
 }
+
 function limpar(){
     document.getElementById('root').innerHTML=` <div id="tamanhos">
                
     </div> <br>`;
 }
+
 function addTamanhos(){
     document.getElementById('tamanhos').innerHTML=`
     <div class="CardPrecos">
@@ -96,4 +92,11 @@ function addTamanhos(){
      </div>
     `;
 }
-    
+function adPizza(){
+    addTamanhos();
+    for(let i =0;i<pizzas.length;i++){
+        RenderPizza(pizzas[i],i);
+    }
+  
+
+}
