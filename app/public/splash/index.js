@@ -30,7 +30,7 @@ almoco.addEventListener('click',function(){
 window.onload = function(){
     limpar();
     addTamanhos();
-    RenderPizza(pz());
+    RenderPizza(pz(),0);
 }
 
 function pz (){
