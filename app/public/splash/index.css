@@ -219,6 +219,15 @@
     flex-direction: column;
     align-items: center;
 }
+.renderCard{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .conteudo .card{
     border: solid 1px;
     display: flex;
@@ -228,14 +237,7 @@
     width: 300px;
     border-radius: 5px;
 }
-.conteudo .card .img{
-    width: 100%;
-    height: 100%;
-}
-.conteudo .card .img img{
-    width: 100%;
-    height: 100%;
-}
+
 .conteudo .card .textCard{
     font-size: 10px;
     text-align: center;
@@ -276,4 +278,10 @@
     font-weight: 800;
     margin-right: auto;
     font-size: 2em;
+}
+.espasador{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 0;
 }

@@ -1,5 +1,5 @@
 const list = document.querySelectorAll('.list');
-const id ='';
+const id =0;
 function activeLink(){
     list.forEach((item)=>
     item.classList.remove('active'));
@@ -21,4 +21,34 @@ lanche.addEventListener('click',function(){
 almoco.addEventListener('click',function(){
     //almoço
 });
+
+function pz (){
+const pizza={
+    nome:'moda da casa',
+    descrision:'leva calabresa queijo e frango com mussarela'
+}
+return pizza;
+}
+window.onload = function(){
+    for(let i =0; i<=15;i++){
+        RenderPizza(pz(), i);
+    }
+}
+
+
+function RenderPizza(dados, id){
+    document.getElementById('root').innerHTML+=`
+    <div class="card">
+    <div class="textCard">
+        <h1>${dados.nome+' / '+id}</h1>
+        <p>${dados.descrision}</p>
+    </div>
+    <div class="button">
+        <h2>Whatsap</h2>
+        <ion-icon name="logo-whatsapp" class="icon-whatssap"></ion-icon>
+    </div>
+</div>
+    
+    `;
+}
     
