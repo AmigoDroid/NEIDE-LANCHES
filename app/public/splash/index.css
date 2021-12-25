@@ -240,6 +240,7 @@
     margin: 0 5px 40px 5px;
     width: 300px;
     box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
     border-radius: 5px;
     padding: 10px 4px 10px 4px;
 }
