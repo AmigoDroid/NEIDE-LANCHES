@@ -6,7 +6,7 @@ const pizzas =[
     'descrision':'Queijo mussarela, calabresa, cebola, milho, ervilha e orégano.'},
 
     {'nome':'Frango',
-    'descrision':'Queijo mussarela, azeitona, frango desfiado, milho, ervilha, tomate, pimentão e orégano, Obs: “pode adicionar catupiry“.'},
+    'descrision':'Queijo mussarela, azeitona, frango desfiado, milho, ervilha, tomate, pimentão e orégano, <strong> Obs:</strong> “pode adicionar catupiry“.'},
 
     {'nome':'Bacon','descrision':'Queijo mussarela, bacon, pimentão, tomate, cebola, milho, ervilha e orégano.'},
 
