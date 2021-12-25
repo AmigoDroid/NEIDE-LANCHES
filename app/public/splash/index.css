@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root{
     /*FONTES*/
     --fonte-logo:'Cinzel Decorative', cursive;
     --fonte-letras:'Philosopher', sans-serif;
+    --fonte-montserrat:'montserrat',sans-serif;
     /*CORES*/
     --color-menu-title-background:#232323;
     --color-title-background:#232323;
-    --color-amarelo:white;
+    --color-titulo:white;
     --color-fonte-preto:#23232346;
     --color-verde-thema:rgb(0, 255, 149);
     --color-branco:white;
@@ -19,7 +22,7 @@
 {
     margin: 0;
     padding: 0;
-    font-family: var(--fonte-logo);
+   
 }
 .title{
     background: var(--color-title-background);
@@ -33,10 +36,12 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
 }
 .title h1{
-    color: var(--color-amarelo);
+    color: var(--color-titulo);
+    font-family: var(--fonte-logo);
 }
 .title p{
     background:var(--cor-destaque);
+    font-family: var(--fonte-montserrat);
     padding: 6px;
     color: black;
     border-radius: 25px;
@@ -50,8 +55,9 @@
     font-weight: 600;
 }
 .CardPrecos h1{
-    font-size: 1.3em;
+    font-size: 2em;
     font-weight: 800;
+    font-family: var(--fonte-letras);
 }
 .CardPrecos .precos ul{
     font-family: Arial, Helvetica, sans-serif;
@@ -233,14 +239,14 @@
     
 }
 .conteudo .card{
-    border: solid 2px var(--cor-destaque);
+    border: solid 2px #22232770;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 5px 40px 5px;
-    width: 300px;
+    width: 280px;
     box-sizing: border-box;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.178);
+    box-shadow:-1px 1px 5px 5px rgba(9, 207, 158, 0.1);
     border-radius: 5px;
     padding: 10px 4px 10px 4px;
 }
@@ -251,13 +257,14 @@
 .conteudo .card .textCard h1{
     font-family: var(--fonte-logo);
     font-weight: 800;
-    font-size: 25px
+    font-size: 28px
 }
 .conteudo .card .textCard p{
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 16px;
+    font-family: var(--fonte-montserrat);
     text-align: center;
-    font-weight: 800;
+    
 }
 .conteudo .card .button{
     width: 62%;
