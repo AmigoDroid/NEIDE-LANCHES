@@ -1,1 +1,1 @@
-const bandeco =[];
+const bandeco =[{'nome':'carne na chapa','descrision':'','valor':'15,00'}];

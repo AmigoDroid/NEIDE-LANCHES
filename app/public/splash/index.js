@@ -27,6 +27,7 @@ lanche.addEventListener('click',function(){
 almoco.addEventListener('click',function(){
     //almoço
     limpar();
+    adBandeco();
 });
 
 window.onload = function(){
@@ -58,6 +59,18 @@ function RenderLanches(dados,id){
     <div class="button">
     <h3>${valor}</h3>
 </div>
+</div>
+    
+    `;
+}
+function RenderBandeco(dados,id){
+    let {nome , descrision}= dados;
+    document.getElementById('root').innerHTML+=`
+    <div class="card">
+    <div class="textCard">
+        <h1>${nome}</h1>
+        <p>${descrision}</p>
+    </div>
 </div>
     
     `;
@@ -113,5 +126,10 @@ function adPizza(){
 function adLanches(){
     for(let i =0;i<lanches.length;i++){
         RenderLanches(lanches[i],i);
+    }
+}
+function adBandeco(){
+    for(let i =0;i<bandeco.length;i++){
+        RenderLanches(bandeco[i],i);
     }
 }
