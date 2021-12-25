@@ -22,6 +22,7 @@ lanche.addEventListener('click',function(){
 
     //lanche
     limpar();
+    adLanches();
     });
 almoco.addEventListener('click',function(){
     //almoço
@@ -42,10 +43,21 @@ function RenderPizza(dados,id){
         <h1>${nome}</h1>
         <p>${descrision}</p>
     </div>
-    <div class="button">
-        <h2>Whatsap</h2>
-        <ion-icon name="logo-whatsapp" class="icon-whatssap"></ion-icon>
+</div>
+    
+    `;
+}
+function RenderLanches(dados,id){
+    let {nome , descrision,valor}= dados;
+    document.getElementById('root').innerHTML+=`
+    <div class="card">
+    <div class="textCard">
+        <h1>${nome}</h1>
+        <p>${descrision}</p>
     </div>
+    <div class="button">
+    <h3>${valor}</h3>
+</div>
 </div>
     
     `;
@@ -97,6 +109,9 @@ function adPizza(){
     for(let i =0;i<pizzas.length;i++){
         RenderPizza(pizzas[i],i);
     }
-  
-
+}
+function adLanches(){
+    for(let i =0;i<lanches.length;i++){
+        RenderLanches(lanches[i],i);
+    }
 }
