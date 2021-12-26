@@ -85,7 +85,7 @@ function limpar(){
 function addTamanhos(){
     document.getElementById('tamanhos').innerHTML=`
     <div class="CardPrecos">
-    <h1>Tamanhos</h1>
+    <h1>Tamanhos de Pizzas</h1>
      <div class="precos">
          <ul>
              <li class="item">

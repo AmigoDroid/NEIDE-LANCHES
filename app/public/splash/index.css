@@ -41,11 +41,11 @@
 }
 .title p{
     background:var(--cor-destaque);
-    font-family: var(--fonte-montserrat);
+    font-family: var(--fonte-letras);
     padding: 6px;
     color: black;
     border-radius: 25px;
-    font-weight: 700;
+    font-weight: 600;
     border: 1px solid #23232346;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
 }
@@ -53,6 +53,10 @@
     text-align: center;
     margin-top: 5%;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .CardPrecos h1{
     font-size: 2em;
