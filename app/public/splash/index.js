@@ -94,13 +94,13 @@ function addTamanhos(){
              <li class="item">
                  <a>
                      <h1>P</h1>
-                     <p>R$: 14,99</p>
+                     <p>R$: 16,00</p>
                  </a>
              </li>
              <li class="item">
                  <a>
                      <h1>M</h1>
-                     <p>R$: 24,99</p>
+                     <p>R$: 26,00</p>
                  </a>
              </li>
              <li class="item">
