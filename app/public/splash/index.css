@@ -240,8 +240,7 @@
     left: -26px;
     width: 25px;
     height: 21px;
-    transform: translateY(-0px);
-    border-left: solid 1px var(--color-title-background);
+    transform: translateY(-1px);
     border-radius: 0 20px 0 0;
     background:transparent;
     box-shadow: 0 -10px 0 var(--cor-de-fundo);
@@ -253,8 +252,7 @@
     right: -26px;
     width: 25px;
     height: 21px;
-     transform: translateY(-0px);
-     border-right: solid 1px var(--color-title-background);
+    transform: translateY(-1px);
     border-radius: 20px 0 0 0;
     background:transparent;
     box-shadow: 0 -10px 0 var(--cor-de-fundo);
