@@ -161,9 +161,8 @@ function abrirLC(dados){
         }else{
             msg='Boa Noite';
         }
-        location.assign("https://api.whatsapp.com/send?phone=5599988496976&text=Ol%C3%A1%2C%20"+msg+"%20quero%20fazer%20um%20pedido!")}
-    
-
+        // location.assign("https://api.whatsapp.com/send?phone=5599988496976&text=Ol%C3%A1%2C%20"+msg+"%20quero%20fazer%20um%20pedido!")}
+    }
 function adPizza(){
     addTamanhos();
     for(let i =0;i<pizzas.length;i++){
