@@ -16,7 +16,8 @@
     --color-verde-thema:rgb(0, 255, 149);
     --color-branco:white;
     --cor-de-fundo:#e2e1e1;
-    --cor-destaque:rgb(255, 145, 19);
+    --cor-destaque:rgb(255, 136, 0);
+    --cor-fonte-destaque:black;
 }
 *
 {
@@ -25,7 +26,7 @@
    
 }
 .title{
-    background: var(--color-title-background);
+    background: var(--cor-destaque);
     background-size: 300%;
     padding: 5px;
     font-weight: 700;
@@ -36,14 +37,14 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
 }
 .title h1{
-    color: var(--color-titulo);
+    color: var(--cor-fonte-destaque);
     font-family: var(--fonte-logo);
 }
 .title p{
     background:var(--cor-destaque);
     font-family: var(--fonte-letras);
     padding: 6px;
-    color: black;
+    color:var(--color-branco);
     border-radius: 25px;
     font-weight: 600;
     border: 1px solid #23232346;
@@ -83,7 +84,7 @@
     pointer-events: none;
 }
 .CardPrecos .precos ul .item{
-    background-color: #232323;
+    background: var(--cor-destaque);
     padding: 10px;
     border-radius: 5px;
     
@@ -91,20 +92,21 @@
 /*TAMANHOS TEXT*/
 .CardPrecos .precos ul li h1{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-branco);
+    color: var(--cor-fonte-destaque);
     font-size: 2.6em;
 }
 /*PREÇOS TEXT*/
 .CardPrecos .precos ul li p{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--color-branco);
+    color: var(--cor-fonte-destaque);
     font-size: 1.3em;
+    background: transparent;
 }
 /*MINI PIZZA TEXT*/
 .CardPrecos .precos p{
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--color-title-background);
+    background: var(--cor-destaque);
     border-radius: 5px;
     transform: translateY(5px);
     color: white;
@@ -148,7 +150,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #222327;
+    background:var(--cor-destaque);
     position: relative;
     border: solid 10px transparent;
     border-top-color: var(--cor-de-fundo);
@@ -197,18 +199,17 @@
     display: block;
     line-height: 75px;
     font-size: 2em;
-    color: white;
+    color: var(--cor-fonte-destaque);
     text-align: center;
     transition: .4s;
 }
 .navigation ul li.active a .icon{
     transform: translateY(-30px);
-    color: black;
+    color: var(--cor-fonte-destaque);
 }
 .navigation ul li a .text{
     position: absolute;
-    color: black;
-    background:var(--cor-destaque);
+    color: var(--cor-fonte-destaque);
     padding: 2px 4px 2px 4px;
     font-family: var(--fonte-letras);
     border-radius: 30px;
