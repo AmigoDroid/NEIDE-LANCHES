@@ -91,11 +91,10 @@
 .CardPrecos .precos ul li h1{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-branco);
-    font-size: 280%;
+
 }
 .CardPrecos .precos ul li p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 180%;
     color: var(--color-branco);
 }
 .CardPrecos .precos p{
