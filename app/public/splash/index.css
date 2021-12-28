@@ -237,7 +237,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: -21px;
+    left: -22px;
     width: 21px;
     height: 21px;
     border-radius: 0 20px 0 0;
@@ -248,7 +248,7 @@
     content: '';
     position: absolute;
     top: 50%;
-    right: -21px;
+    right: -22px;
     width: 21px;
     height: 21px;
     border-radius: 20px 0 0 0;
