@@ -64,13 +64,16 @@ function RenderLanches(dados,pedido){
     `;
 }
 function RenderBandeco(dados,pedido){
-    let {nome , descrision}= dados;
+    let {nome , descrision,valor}= dados;
     document.getElementById('root').innerHTML+=`
     <div class="card" onclick="abrirAL(${pedido})">
     <div class="textCard">
         <h1>${nome}</h1>
         <p>${descrision}</p>
     </div>
+    <div class="button">
+    <h3>${valor}</h3>
+</div>
 </div>
     
     `;
@@ -118,12 +121,11 @@ function addTamanhos(){
      </div>
     `;
 }
+//click pizza
 function abrirPZ(dados){
     const data = new Date();
     const hora = data.getHours();
    var msg = '';
-const resp = confirm("você deseja pedir esse Sabor: "+ pizzas[dados].nome+"?");
-if(resp){
     if(hora>=5 && hora<12){
         msg = 'Bom Dia'
     }else if(hora>=12 && hora < 17){
@@ -132,13 +134,12 @@ if(resp){
         msg='Boa Noite';
     }
     location.assign("https://api.whatsapp.com/send?phone=5599988496976&text=Ol%C3%A1%2C%20"+msg+"%20quero%20fazer%20um%20pedido!")}
-}
+
+    //click Lanche
 function abrirLC(dados){
         const data = new Date();
         const hora = data.getHours();
         var msg = '';
-    const resp = confirm("você deseja pedir esse Sabor: "+ lanches[dados].nome+"?");
-    if(resp){
         if(hora>=5 && hora<12){
             msg = 'Bom Dia'
         }else if(hora>=12 && hora < 17){
@@ -148,13 +149,11 @@ function abrirLC(dados){
         }
         location.assign("https://api.whatsapp.com/send?phone=5599988496976&text=Ol%C3%A1%2C%20"+msg+"%20quero%20fazer%20um%20pedido!")}
     
-    }
+    //CLICK ALMOÇO
     function abrirAL(dados){
         const data = new Date();
         const hora = data.getHours();
         var msg = '';
-    const resp = confirm("você deseja pedir esse Sabor: "+ bandeco[dados].nome+"?");
-    if(resp){
         if(hora>=5 && hora<12){
             msg = 'Bom Dia'
         }else if(hora>=12 && hora < 17){
@@ -163,7 +162,7 @@ function abrirLC(dados){
             msg='Boa Noite';
         }
         location.assign("https://api.whatsapp.com/send?phone=5599988496976&text=Ol%C3%A1%2C%20"+msg+"%20quero%20fazer%20um%20pedido!")}
-    }    
+    
 
 function adPizza(){
     addTamanhos();
@@ -178,6 +177,6 @@ function adLanches(){
 }
 function adBandeco(){
     for(let i =0;i<bandeco.length;i++){
-        RenderLanches(bandeco[i],i);
+        RenderBandeco(bandeco[i],i);
     }
 }
