@@ -237,8 +237,8 @@
     content: '';
     position: absolute;
     top: 50%;
-    left: -22px;
-    width: 22px;
+    left: -26px;
+    width: 25px;
     height: 21px;
     border-radius: 0 20px 0 0;
     background:transparent;
@@ -248,8 +248,8 @@
     content: '';
     position: absolute;
     top: 50%;
-    right: -22px;
-    width: 22px;
+    right: -26px;
+    width: 25px;
     height: 21px;
     border-radius: 20px 0 0 0;
     background:transparent;
