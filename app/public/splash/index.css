@@ -231,7 +231,7 @@
     border-radius: 50%;
     border: solid 5px var(--cor-de-fundo);
     top: -57%;
-    transition: .4s;
+    transition: .3s;
 }
 .indicador::before{
     content: '';
