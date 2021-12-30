@@ -1,0 +1,1 @@
+const bandecoFit =[{'nome':'Fitness','descrision':'em breve este cardapio será liberado','valor':'aguarde...'}];

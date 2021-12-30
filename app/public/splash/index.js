@@ -1,4 +1,6 @@
 const list = document.querySelectorAll('.list');
+const menuAL = document.querySelectorAll('.item');
+
 //animar indicador
 function activeLink(){
     list.forEach((item)=>
@@ -7,11 +9,23 @@ function activeLink(){
 }
 list.forEach((item)=>
 item.addEventListener('click',activeLink));
+// //menu AL
+function clickMenu(){
+    console.log('click');
+menuAL.forEach((item)=>
+item.classList.remove('active'));
+this.classList.add('active');
+console.log(this);
+}
+menuAL.forEach((fg)=>
+fg.addEventListener('click',clickMenu));
 
 //botoes menu
 const pizza = document.getElementById('pizza');
 const lanche = document.getElementById('lanche');
 const almoco = document.getElementById('almoco');
+  //sube menu
+   
 //
 pizza.addEventListener('click',function(){
     //pizzs
@@ -28,7 +42,11 @@ almoco.addEventListener('click',function(){
     //almoço
     limpar();
     adBandeco();
+    bandecoMenu();
+   
 });
+
+
 
 window.onload = function(){
     limpar();
@@ -78,7 +96,59 @@ function RenderBandeco(dados,pedido){
     
     `;
 }
+function RenderBandecoFit(dados,pedido){
+    let {nome , descrision,valor}= dados;
+    document.getElementById('root').innerHTML+=`
+    <div class="card" onclick="abrirAL(${pedido})">
+    <div class="textCard">
+        <h1>${nome}</h1>
+        <p>${descrision}</p>
+    </div>
+    <div class="button">
+    <h3>${valor}</h3>
+</div>
+</div>
+    
+    `;
+}
+function bandecoMenu(){
 
+    document.getElementById('tamanhos').innerHTML=`
+    <div class="CardMenu">
+    <h1>Tipo de Cardapio</h1>
+     <div class="menu">
+         <ul>
+             <li>  
+                 <a id="normal" class="item active">
+                     <h1>Normal</h1>
+                     <span></span>
+                 </a>
+             </li>
+             <li>
+                <a id="fitness" class="item">
+                     <h1>Fitness</h1>
+                     <span></span>
+                 </a>
+             </li>
+         </ul>
+     </div>
+    `;
+
+    const fitness = document.getElementById('fitness');
+    const normal = document.getElementById('normal');
+           //menu fitness
+        fitness.addEventListener('click',function(){
+            limpar();
+            adBandecoFit();
+            bandecoMenu();
+                                });
+        //menu normal
+        normal.addEventListener('click',function(){
+             limpar();
+             adBandeco();
+             bandecoMenu();
+                              });
+}
 function limpar(){
     document.getElementById('root').innerHTML=` <div id="tamanhos">
                
@@ -177,5 +247,10 @@ function adLanches(){
 function adBandeco(){
     for(let i =0;i<bandeco.length;i++){
         RenderBandeco(bandeco[i],i);
+    }
+}
+function adBandecoFit(){
+    for(let i =0;i<bandecoFit.length;i++){
+        RenderBandecoFit(bandecoFit[i],i);
     }
 }
