@@ -1,1 +1,12 @@
-const bandecoFit =[{'nome':'Fitness','descrision':'em breve este cardapio será liberado','valor':'aguarde...'}];
+const preco='R$: 15,00'
+const bandecoFit =[
+    {'nome':'Omelete','descrision':'<strong>Acompanhamento:</strong><br> arroz, macarrão,purê de batata e salada crua','valor':preco},
+
+    {'nome':'Filé de Frango grelhado','descrision':'<strong>Acompanhamento:</strong><br>  arroz, macarrão,purê de batata e salada crua','valor':preco},
+
+    {'nome':'Strogonoff de frango','descrision':'<strong>Acompanhamento:</strong><br>  arroz, macarrão,purê de batata e salada crua','valor':preco},
+
+    {'nome':'Panqueca de frango','descrision':'<strong>Acompanhamento:</strong><br>  arroz, macarrão, batata grelhada e salada crua','valor':''},
+
+
+];

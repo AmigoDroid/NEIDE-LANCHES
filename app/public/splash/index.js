@@ -52,6 +52,8 @@ window.onload = function(){
     limpar();
     addTamanhos();
     adPizza();
+    // bandecoMenu();
+    // adBandecoFit();
 }
 
 function RenderPizza(dados,pedido){
@@ -89,9 +91,6 @@ function RenderBandeco(dados,pedido){
         <h1>${nome}</h1>
         <p>${descrision}</p>
     </div>
-    <div class="button">
-    <h3>${valor}</h3>
-</div>
 </div>
     
     `;
@@ -100,15 +99,15 @@ function RenderBandecoFit(dados,pedido){
     let {nome , descrision,valor}= dados;
     document.getElementById('root').innerHTML+=`
     <div class="card" onclick="abrirAL(${pedido})">
+    <div class="integral">
+    <p>100% <br> Integral</p>
+    </div>
     <div class="textCard">
         <h1>${nome}</h1>
         <p>${descrision}</p>
     </div>
-    <div class="button">
-    <h3>${valor}</h3>
 </div>
-</div>
-    
+
     `;
 }
 function bandecoMenu(){
@@ -131,6 +130,7 @@ function bandecoMenu(){
                  </a>
              </li>
          </ul>
+         <p id="valorM">Valor da Marmita: 15,00 reais  </p>
      </div>
     `;
 
