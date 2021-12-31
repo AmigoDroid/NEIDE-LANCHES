@@ -25,6 +25,9 @@
     padding: 0;
    
 }
+header{
+    background: var(--cor-destaque);
+}
 .title{
     background: var(--cor-destaque);
     background-size: 300%;
@@ -34,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+  
 }
 .title h1{
     color: var(--cor-fonte-destaque);
@@ -49,6 +52,26 @@
     font-weight: 600;
     border: 1px solid #23232346;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+}
+/*DESCRIÇÃO DO TITULO*/
+.descrisionTitle{
+    text-align: center;
+    margin-top: 4px;
+    width: 100%;
+    background: var(--cor-destaque);
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.descrisionTitle #tel{
+    margin-right: auto;
+    margin-left: 10px;
+}
+.descrisionTitle #mspix{
+    margin-left: auto;
+    margin-right: 10px;
 }
 .CardPrecos{
     text-align: center;

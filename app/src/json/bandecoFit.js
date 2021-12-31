@@ -8,5 +8,7 @@ const bandecoFit =[
 
     {'nome':'Panqueca de frango','descrision':'<strong>Acompanhamento:</strong><br>  arroz, macarrão, batata grelhada e salada crua','valor':''},
 
+    {'nome':'Almondega de carne','descrision':'<strong>Acompanhamento:</strong><br>  arroz, macarrão, purê de batata e salada crua','valor':''}
+
 
 ];

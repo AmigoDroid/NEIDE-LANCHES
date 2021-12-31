@@ -50,8 +50,10 @@ almoco.addEventListener('click',function(){
 
 window.onload = function(){
     limpar();
-    addTamanhos();
-    adPizza();
+    adBandeco();
+    bandecoMenu();
+    ///addTamanhos();
+    //adPizza();
     // bandecoMenu();
     // adBandecoFit();
 }
