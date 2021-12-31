@@ -47,7 +47,7 @@ almoco.addEventListener('click',function(){
    
 });
 perfil.addEventListener('click',function(){
-    limpar();
+   // limpar();
     console.log('perfil');
 });
 
