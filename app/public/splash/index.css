@@ -62,17 +62,17 @@ header{
     font-weight: 600;
     font-size: 16px;
     color: black;
-    display: flex;
+    /* display: flex; */
     font-family: Arial, Helvetica, sans-serif;
 }
-.descrisionTitle #tel{
+/* .descrisionTitle #tel{
     margin-right: auto;
     margin-left: 10px;
 }
 .descrisionTitle #mspix{
     margin-left: auto;
     margin-right: 10px;
-}
+} */
 .CardPrecos{
     text-align: center;
     margin-top: 5%;
