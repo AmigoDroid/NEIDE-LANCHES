@@ -62,17 +62,17 @@ header{
     font-weight: 600;
     font-size: 16px;
     color: black;
-    /* display: flex; */
+    display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* .descrisionTitle #tel{
+.descrisionTitle #tel{
     margin-right: auto;
     margin-left: 10px;
 }
 .descrisionTitle #mspix{
     margin-left: auto;
     margin-right: 10px;
-} */
+}
 .CardPrecos{
     text-align: center;
     margin-top: 5%;
@@ -204,7 +204,7 @@ header{
     bottom: 0;
 }
 .navigation{
-    width: 440px;
+    width:100%;
     height: 70px;
     display: flex;
     align-items: center;
@@ -234,6 +234,8 @@ header{
 }
 .navigation ul{
     display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     width: 230px;
 }
@@ -251,6 +253,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 75px;
    
 }
 .navigation ul li a .icon{
@@ -318,15 +321,17 @@ header{
     box-shadow: 0 -10px 0 var(--cor-de-fundo);
 }
 .navigation ul li:nth-child(1).active ~ .indicador{
-    transform: translateX(calc(70px * 0));
+    transform: translateX(calc(113px * -1));
 }
 .navigation ul li:nth-child(2).active ~ .indicador{
-    transform: translateX(calc(75px * 1));
+    transform: translateX(calc(39px * -1));
 }
 .navigation ul li:nth-child(3).active ~ .indicador{
-    transform: translateX(calc(75px * 2));
+    transform: translateX(calc(19px * 2));
 }
-
+.navigation ul li:nth-child(4).active ~ .indicador{
+    transform: translateX(calc(37px * 3));
+}
 .conteudo{
     margin: 0;
     padding: 0;

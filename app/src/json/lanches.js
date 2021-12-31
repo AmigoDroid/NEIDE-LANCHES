@@ -1,7 +1,7 @@
 const lanches = [
     {'nome':'Salada de fruta','descrision':'','valor':'R$: 6,00'},
 
-    {'nome':'Sanduíche americano','descrision':'Pão de forma, patê de frango, milho, ervilha, batata palha e tomate','valor':''},
+    {'nome':'Sanduíche americano','descrision':'Pão de forma, patê de frango, milho, ervilha, batata palha e tomate','valor':'R$: 8,00'},
 
 {'nome':'Cachorro quente','descrision':'Pão, salsicha, carne moída, molho barbecue, salada, milho, ervilha e batata palha.','valor':'R$: 6,00'},
 
