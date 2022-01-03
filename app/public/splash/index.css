@@ -209,10 +209,9 @@ header{
     bottom: 0;
 }
 .navigation{
-    width:100%;
+    width:400px;
     height: 70px;
     display: flex;
-    align-items: center;
     justify-content: center;
     background:var(--cor-destaque);
     position: relative;
@@ -326,6 +325,15 @@ header{
     box-shadow: 0 -10px 0 var(--cor-de-fundo);
 }
 .navigation ul li:nth-child(1).active ~ .indicador{
+    transform: translateX(calc(79px * -1));
+}
+.navigation ul li:nth-child(2).active ~ .indicador{
+    transform: translateX(calc(1px * -2));
+}
+.navigation ul li:nth-child(3).active ~ .indicador{
+    transform: translateX(calc(-25px * -3));
+}
+/* .navigation ul li:nth-child(1).active ~ .indicador{
     transform: translateX(calc(113px * -1));
 }
 .navigation ul li:nth-child(2).active ~ .indicador{
@@ -336,7 +344,7 @@ header{
 }
 .navigation ul li:nth-child(4).active ~ .indicador{
     transform: translateX(calc(37px * 3));
-}
+} */
 .conteudo{
     margin: 0;
     padding: 0;

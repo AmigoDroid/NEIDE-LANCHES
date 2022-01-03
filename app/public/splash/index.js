@@ -24,7 +24,7 @@ fg.addEventListener('click',clickMenu));
 const pizza = document.getElementById('pizza');
 const lanche = document.getElementById('lanche');
 const almoco = document.getElementById('almoco');
-const perfil = document.getElementById('perfil');
+//const perfil = document.getElementById('perfil');
   //sube menu
    
 //
@@ -46,10 +46,10 @@ almoco.addEventListener('click',function(){
     bandecoMenu();
    
 });
-perfil.addEventListener('click',function(){
-   // limpar();
-    console.log('perfil');
-});
+// perfil.addEventListener('click',function(){
+//    // limpar();
+//     console.log('perfil');
+// });
 
 
 
