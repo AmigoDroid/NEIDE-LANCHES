@@ -16,7 +16,7 @@
     --color-verde-thema:rgb(0, 255, 149);
     --color-branco:white;
     --cor-de-fundo:#e2e1e1;
-    --cor-destaque:rgb(255, 136, 0);
+    --cor-destaque:rgb(253, 152, 36);
     --cor-fonte-destaque:black;
 }
 *
@@ -50,8 +50,7 @@ header{
     color:var(--color-branco);
     border-radius: 25px;
     font-weight: 600;
-    border: 1px solid #23232346;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.329);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.329);
 }
 /*DESCRIÇÃO DO TITULO*/
 .descrisionTitle{
@@ -441,12 +440,11 @@ header{
 .integral{
     background: var(--cor-destaque);
     text-align: center;
-    border: solid 1px rgba(0, 0, 0, 0.438);
-    opacity: 0.850;
+    opacity: 0.950;
     padding: 10px;
     height: 30px;
     width: 30px;
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     border-radius: 50%;
     display: flex;
@@ -455,7 +453,9 @@ header{
     font-weight: 600;
     right: -25px;
     top: -25px;
+    font-family: var(--fonte-montserrat);
     transform: rotate(30deg);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.733);
 }
 #valorM{
     width: 95%;
