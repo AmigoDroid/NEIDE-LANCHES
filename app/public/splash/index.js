@@ -1,6 +1,7 @@
 const list = document.querySelectorAll('.list');
 const menuAL = document.querySelectorAll('.item');
 
+
 //animar indicador
 function activeLink(){
     list.forEach((item)=>
@@ -57,6 +58,8 @@ window.onload = function(){
     limpar();
     adBandeco();
     bandecoMenu();
+    const tfg = process.env.TESTE_KEY;
+    console.log("variavel de ambiente: "+tfg);
     ///addTamanhos();
     //adPizza();
     // bandecoMenu();
