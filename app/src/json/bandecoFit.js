@@ -6,7 +6,7 @@ const bandecoFit =[
 
     {'nome':'Empanado de Frango integral','descrision':'<strong>Acompanhamento:</strong><br>  arroz integral, macarrão integral, salada e batata frinta empanada','valor':preco},
 
-    {'nome':' Suco Detox','descrision':'','valor':preco},
+    {'nome':' Suco Detox','descrision':'Quatidade: 350 <strong>ml</strong><br>  <div class="sucoFit"><h3>R$: 7,00</div>','valor':preco},
 
     {'nome':'Strogonoff de frango integral','descrision':'<strong>Acompanhamento:</strong><br>  arroz integral, macarrão integral,purê de batata e salada crua','valor':preco},
 
