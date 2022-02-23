@@ -6,12 +6,12 @@ const bandecoFit =[
 
     {'nome':'Empanado de Frango integral','descrision':'<strong>Acompanhamento:</strong><br>  arroz integral, macarrão integral, salada e batata frinta empanada','valor':preco},
 
+    {'nome':' Suco Detox','descrision':'','valor':preco},
 
     {'nome':'Strogonoff de frango integral','descrision':'<strong>Acompanhamento:</strong><br>  arroz integral, macarrão integral,purê de batata e salada crua','valor':preco},
 
     {'nome':'Panqueca de frango integral','descrision':'<strong>Acompanhamento:</strong><br>  arroz integral, macarrão integral, batata grelhada e salada crua','valor':''},
 
     {'nome':'Almondega de carne integral','descrision':'<strong>Acompanhamento:</strong><br>  arroz integral, macarrão integral, purê de batata e salada crua','valor':''}
-
 
 ];
