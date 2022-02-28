@@ -58,7 +58,6 @@ window.onload = function(){
     limpar();
     adBandeco();
     bandecoMenu();
-    const tfg = process.env.TESTE_KEY;
     console.log("variavel de ambiente: "+tfg);
     ///addTamanhos();
     //adPizza();
