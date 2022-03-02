@@ -100,9 +100,11 @@
     <script>
         const api ='https://pedidos-delivery.herokuapp.com';
         const socket = io(api);
+        socket.emit('cliente','neide');
         socket.on('ONLINE',(online)=>{
             console.log(online);
         })
+
    
    </script>
 </body>
