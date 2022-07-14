@@ -138,7 +138,7 @@ function bandecoMenu(){
                  </a>
              </li>
          </ul>
-         <p id="valorM">Valor da Marmita: 15,00 reais  </p>
+         <p id="valorM">Valor da Marmita: 20,00 reais  </p>
      </div>
     `;
 
@@ -195,7 +195,7 @@ function addTamanhos(){
              </li>
      
          </ul>
-         <p>mini pizza R$: 10,00</p>
+         <p>mini pizza R$: 12,00</p>
      </div>
     `;
 }

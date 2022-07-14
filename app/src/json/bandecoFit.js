@@ -1,4 +1,4 @@
-const preco='R$: 15,00'
+const preco='R$: 20,00'
 const bandecoFit =[
     {'nome':'Omelete integral','descrision':'<strong>Acompanhamento:</strong><br> arroz integral, macarrão integral,purê de batata e salada crua','valor':preco},
 
