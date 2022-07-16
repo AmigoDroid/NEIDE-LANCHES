@@ -6,9 +6,7 @@ const lanches = [
     {'nome':'Pastel de Forno','descrision':'','valor':'R$: 5,00'},
     {'nome':'Sanduíche americano','descrision':'Pão de forma, patê de frango, milho, ervilha, batata palha e tomate','valor':'R$: 10,00'},
 
-{'nome':'Dogão quente especial','descrision':'Pão, salsicha, carne moída, molho barbecue, salada, milho, ervilha e batata palha.','valor':'R$: 8,00'},
-
-{'nome':'Cachorro quente especial','descrision':'Pão, salsicha, carne moída, molho barbecue, salada com tomate, queijo mussarela, queijo cheddar, calabresa, ovo , milho, ervilha e batata palha.','valor':'R$: 15,00'},
+{'nome':'Dogão quente especial','descrision':'Pão, salsicha, carne moída, molho barbecue, salada, milho, ervilha e batata palha.','valor':'R$: 15,00'},
 
 {'nome':'Lasanha de frango','descrision':'Frango, presunto, queijo mussarela, e massa de lasanha.','valor':'R$: 15,00'},
 
