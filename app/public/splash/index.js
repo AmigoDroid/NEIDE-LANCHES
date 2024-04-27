@@ -4,19 +4,19 @@ const menuAL = document.querySelectorAll('.item');
 
 //animar indicador
 function activeLink(){
-    list.forEach((item)=>
-    item.classList.remove('active'));
-    this.classList.add('active');
+    list.forEach((item)=>{})
+    //item.classList.remove('active'));
+   // this.classList.add('active');
 }
 list.forEach((item)=>
 item.addEventListener('click',activeLink));
 // //menu AL
 function clickMenu(){
     console.log('click');
-menuAL.forEach((item)=>
-item.classList.remove('active'));
-this.classList.add('active');
-console.log(this);
+  menuAL.forEach((item)=>
+  item.classList.remove('active'));
+  this.classList.add('active');
+  console.log(this);
 }
 menuAL.forEach((fg)=>
 fg.addEventListener('click',clickMenu));
@@ -31,20 +31,20 @@ const almoco = document.getElementById('almoco');
 //
 pizza.addEventListener('click',function(){
     //pizzs
-    limpar();
-    adPizza();
+   // limpar();
+   // adPizza();
 });
 lanche.addEventListener('click',function(){
 
     //lanche
-    limpar();
-    adLanches();
+ //   limpar();
+   // adLanches();
     });
 almoco.addEventListener('click',function(){
     //almoço
-    limpar();
-    adBandeco();
-    bandecoMenu();
+  //  limpar();
+   // adBandeco();
+   // bandecoMenu();
    
 });
 // perfil.addEventListener('click',function(){
@@ -56,8 +56,8 @@ almoco.addEventListener('click',function(){
 
 window.onload = function(){
     limpar();
-    adBandeco();
-    bandecoMenu();
+    adLanches();
+    //bandecoMenu();
     ///addTamanhos();
     //adPizza();
     // bandecoMenu();
