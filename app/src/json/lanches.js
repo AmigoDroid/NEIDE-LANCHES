@@ -1,6 +1,14 @@
 const lanches = [
-    {'nome':'Suco','descrision':'','valor':'R$: 5,00'},
-    {'nome':'Refrigerante','descrision':'latinha de 290mL','valor':'R$: 5,00'},
+    {
+        'nome':'Hambuger Simples',
+        'descrision':'Pão, carne, ovo, tomate, pepino,alface,batata palha e molho caseiro',
+        'valor':'R$: 10,00'
+    },
+    {
+        'nome':'Refrigerante',
+        'descrision':'latinha de 290mL',
+        'valor':'R$: 5,00'
+    },
     {'nome':'Refrigerante','descrision':'Garafa de 1L','valor':'R$: 8,00'},
     {'nome':'Salada de fruta','descrision':'','valor':'R$: 6,00'},
     {'nome':'Pastel de Forno','descrision':'','valor':'R$: 5,00'},
