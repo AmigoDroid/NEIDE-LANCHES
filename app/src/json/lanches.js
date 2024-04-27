@@ -56,14 +56,30 @@ const lanches = [
   'descrision':'Presunto  e queijo <br/>Carne com queijo <br>Frango com queijo <br>Queijo mussarela ',
   'valor':'R$: 7,00'},
   
-  {'nome':'Macarronada','descrision':'Carne com salsicha, barbecue, molho de tomate, milho, ervilha e azeitona.','valor':'R$: 8,00'},
+  {'nome':'BATATA FRITA','descrision':'Porção Média  12 REAIS <br> Porção Grande 18 REAIS ','valor':'M - R$: 12,00<br> G - R$: 18,00'},
   
-  {'nome':'Empadão','descrision':'Patê de frango, requeijão e queijo cheddar.','valor':'R$: 10,00'},
+  {'nome':'vatapá de camarão','descrision':'acompanha arroz','valor':'R$: 20,00'},
   
-  {'nome':'Panquecas','descrision':'Frango ou carne moída e queijo mussarela.','valor':'R$: 10,00'},
+  {'nome':'Lasanha',
+  'descrision':'Sabor Frango ou Carne',
+  'valor':'R$: 15,00'},
   
-  {'nome':'Strogonoff de frango','descrision':'com arro    branco e batata palha','valor':'R$: 8,00'},
+  {'nome':'Macarronada',
+  'descrision':'Espaguete,molho,carne,presunto,queijo musarela milho,ervilha,batata palha, orégano ',
+  'valor':'R$: 18,00'},
   
-  {'nome':'vatapá de camarão','descrision':'com arroz branco','valor':'R$: 12,00'}
+  {'nome':'Salada de fruta.','descrision':'','valor':'R$: 8,00'},
+  
+
+
+  {'nome':'Suco',
+  'descrision':'Acerola <br>Abacaxi <br> Cajá.   <br>Goiaba. <br>',
+  'valor':'R$: 6,00'},
+  
+  {'nome':'Suco Maracujá','descrision':'','valor':'R$: 8,00'},
+  
+  {'nome':'Vitamina','descrision':' sabor cupuaçu<br> sabor graviola ','valor':'R$: 10,00'},
+  
+  {'nome':'Água mineral.','descrision':' 400ml','valor':'R$: 3,00'},
   
   ]
